@@ -28,7 +28,7 @@ public class InfinispanRemoteJCacheManager
 	
 	private void init() 
 	{
-		URI uri = URI.create("hotrod-client.properties");
+		URI uri = URI.create("application.properties");
 	    cacheManager = Caching.getCachingProvider(PROVIDER)
           .getCacheManager(uri, InfinispanRemoteJCacheManager.class.getClass().getClassLoader());
 	}
